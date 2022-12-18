@@ -4,5 +4,5 @@ if __name__ == "__main__":
     add = 0
     for idx in sys.argv:
         if idx != sys.argv[0]:
-        add += int(idx)
+            add += int(idx)
     print(add)
