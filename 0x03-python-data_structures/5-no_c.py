@@ -4,5 +4,5 @@ def no_c(my_string):
         if chr == 'c' and chr == 'C':
             continue
         else:
-            new_string += ele
+            new_string += chr
     return new_string
