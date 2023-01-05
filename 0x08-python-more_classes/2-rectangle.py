@@ -45,4 +45,9 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        return self.__height + self.__height + self.__width + self.__width
+        if self.width == 0:
+            return 0
+        elif self.height == 0:
+            return 0
+        else:
+            return self.__height + self.__height + self.__width + self.__width
