@@ -57,5 +57,5 @@ class Rectangle:
             return ("")
         else:
             for idx in range(0, self.__height):
-                return (("#" * self.__width) +
-                        ("\n" + "#" * self.__width) * (self.__height - 1))
+                my_rect.append("#" * self.__width)
+            return "\n".join(my_rect)
