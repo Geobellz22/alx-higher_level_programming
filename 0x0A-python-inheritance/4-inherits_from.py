@@ -2,8 +2,8 @@
 """Checks for a subclass"""
 
 
-def inherits_from(obj, a_class): 
- """Checks if the object is an instance of the class that inherited
+def inherits_from(obj, a_class):
+    """Checks if the object is an instance of the class that inherited
     (directly or indirectly of a specified class)
     Args:
         obj (a_class):
@@ -11,4 +11,4 @@ def inherits_from(obj, a_class):
     return:
     True if object is an instance of an inherited class, otherwise False
     """
- return not type(obj) is a_class and issubclass(type(obj), a_class)
+    return not type(obj) is a_class and issubclass(type(obj), a_class)
