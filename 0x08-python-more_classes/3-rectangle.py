@@ -53,9 +53,10 @@ class Rectangle:
             return self.__height + self.__height + self.__width + self.__width
 
     def __str__(self):
-        if self.__height or self.__width == 0:
+        """prints the rectangle object with '#'"""
+        my_rect = []
+        if self.__width or self.__height == 0:
             return ("")
-        else:
-            for idx in range(0, self.__height):
-                my_rect.append("#" * self.__width)
-            return "\n".join(my_rect)
+        for idx in range(0, self.__height):
+            my_rect.append("#" * self.__width)
+        return "\n".join(my_rect)
