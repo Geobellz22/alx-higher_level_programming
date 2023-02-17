@@ -4,6 +4,6 @@
 -- number of records for this score with label 'number'
 -- List should be sorted by number of records descending
 -- db name will be passed as arg to mysql cmd
-SELECT score, COUNT(1) AS NUMBER FROM second_table
+SELECT score, COUNT(1) AS number FROM second_table
 GROUP BY score
 ORDER BY number DESC;
