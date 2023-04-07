@@ -15,4 +15,4 @@ if __name__ == "__main__":
         if row[1] == sys.argv[4]:
             print(row)
     cur.close
-    db.close 
+    db.close
