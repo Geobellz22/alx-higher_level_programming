@@ -13,11 +13,11 @@ if __name__ == "__main__":
     cur.execute("SELECT cities.id, cities.name, states.name FROM\
                  cities RIGHT JOIN states\
                  ON states.id = cities.state_id\
-                 WHERE state.name = %s\
+                 WHERE states.name = %s\
                  ORDER BY cities.id ASC", (sys.argv[4],))
-    row = cur.fetchall()
+    rows = cur.fetchall()
 
     for row in rows:
         print (row[0])
-    cur.close
-    db.close
+    cur.close()
+    db.close()
