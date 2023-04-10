@@ -18,6 +18,6 @@ if __name__ == "__main__":
     rows = cur.fetchall()
 
     for row in rows:
-        print (row[0])
+        print(row[1])
     cur.close()
     db.close()
