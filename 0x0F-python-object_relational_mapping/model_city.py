@@ -7,7 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-class State(Base):
+class City(Base):
     """
     state class for use in sqlalchemy inherits from Base
     declarative_Base
@@ -16,3 +16,4 @@ class State(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullabel=False)
+    state_id = Coumn(Integer, ForeignKey(State.id), nullable=False)
