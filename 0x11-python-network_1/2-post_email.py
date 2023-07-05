@@ -9,7 +9,7 @@ import urllib.parse
 
 if __name__ == "__main__":
     data = urllib.parse.urlencode({'email': email}).encode('ascii')
-    req = urllib.request.Request(url, data=data, method='POST')
+    req = urllib.request.Request(url, data=data)
 
     with urllib.request.urlopen(req) as res:
         body = response.read().decode('utf-8')
