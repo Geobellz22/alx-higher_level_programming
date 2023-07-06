@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/python3
 """ python script that takes in a URL and an email,
 sends email sends a post request"""
