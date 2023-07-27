@@ -17,6 +17,6 @@ request.get(args[2], (error, response, body) => {
       }
     });
   });
-    console.log(count);
-  }
+  console.log(count);
+}
 );
